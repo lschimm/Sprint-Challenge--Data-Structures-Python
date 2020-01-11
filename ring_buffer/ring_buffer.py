@@ -7,9 +7,13 @@ class RingBuffer:
         self.current = None
         self.storage = DoublyLinkedList()
 
+    # The `append` method adds elements to the buffer.
     def append(self, item):
-        pass
-
+        # let's see if it's full first as a base case
+        # if it's full, we'll remove the head
+        # then we'll need to reset the tail position
+    
+    # The `get` method returns all of the elements in the buffer in a list in their given order.
     def get(self):
         # Note:  This is the only [] allowed
         list_buffer_contents = []

@@ -43,5 +43,19 @@ class LinkedList:
     return False
 
   def reverse_list(self):
-    # TO BE COMPLETED
-    pass
+        # TO BE COMPLETED
+        # we'll be reversing like
+        # from 1 > 2 > 3 > None
+        # to 3 > 2 > 1 > None
+        # so we need to set up the one, two, and three
+        
+        # use a while loop
+        # break it if the first one isn't empty
+        # first one will contain the head
+
+        first = self.head
+        second = None
+        third = None
+
+
+        
