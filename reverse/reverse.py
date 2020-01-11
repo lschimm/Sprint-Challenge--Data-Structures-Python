@@ -56,6 +56,29 @@ class LinkedList:
         first = self.head
         second = None
         third = None
-
-
         
+
+        # while first is not None:
+              # if get_next == None:
+              #       set_next
+
+              # if the next value is None
+              # set the next value to what is currently on top of the stack
+              # 
+              
+              # first is currently NOT none; set to self.head
+        while first is not None:
+        #       # assign first.next_node to second
+              second = first.next_node
+        #       # first.next_node is swapped to third
+              first.next_node = third
+        #       # third is assigned to first
+        #       # third is now in the first position
+              third = first
+        #       # and then first assigned to second
+              first = second
+        #       # then reassigning the head to third (it's at the beginning now)
+              self.head = third
+        #       # just to make extra suuure in case first never IS none (even though I assigned it myself....)
+              if first is None:
+                    break
