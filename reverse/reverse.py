@@ -68,17 +68,17 @@ class LinkedList:
               
               # first is currently NOT none; set to self.head
         while first is not None:
-        #       # assign first.next_node to second
+              # assign first.next_node to second
               second = first.next_node
-        #       # first.next_node is swapped to third
+              # first.next_node is swapped to third
               first.next_node = third
-        #       # third is assigned to first
-        #       # third is now in the first position
+              # third is assigned to first
+              # third is now in the first position
               third = first
-        #       # and then first assigned to second
+              # and then first assigned to second
               first = second
-        #       # then reassigning the head to third (it's at the beginning now)
+              # then reassigning the head to third (it's at the beginning now)
               self.head = third
-        #       # just to make extra suuure in case first never IS none (even though I assigned it myself....)
+              # just to make extra suuure in case first never IS none (even though I assigned it myself....)
               if first is None:
                     break
